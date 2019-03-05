@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 import {FireauthService} from './fireauth.service';
+import { PopupModule} from 'ng2-opd-popup';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import {FireauthService} from './fireauth.service';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
+    PopupModule.forRoot(),
     AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
